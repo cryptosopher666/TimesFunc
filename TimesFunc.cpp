@@ -15,8 +15,12 @@ int main(){
 int times(int a , int b){
 	if(b==1)
 	return a;
-	else
+	else if(b==-1)
+	return -a;
+	else if(b>1)
 	return times(a,b-1)+a;
+	else
+	return times(a,b+1)-a;
 }
 
 
